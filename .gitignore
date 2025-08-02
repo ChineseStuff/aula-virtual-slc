@@ -1,0 +1,75 @@
+# Node (NextJS frontend, cualquier otra carpeta JS)
+**/node_modules/
+**/.next/
+**/.turbo/
+**/.env.local
+**/.env.development.local
+**/.env.production.local
+**/.env.test.local
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# production
+**/build
+
+# Dependencias bloqueadas
+**/pnpm-lock.yaml
+**/yarn.lock
+**/package-lock.json
+
+# Out y builds de NextJS
+**/out/
+**/dist/
+**/.vercel
+
+# VSCode/IDE
+.vscode/
+.idea/
+*.swp
+
+# Go (backend)
+**/bin/
+**/build/
+**/*.exe
+**/*.test
+**/*.out
+**/coverage/
+**/.cache/
+
+# Archivos temporales de Go
+**/tmp/
+**/*.log
+
+# Docker/infra
+docker-compose.override.yml
+.env
+
+# Neo4j - datos persistentes (¡no subas el volumen real!)
+**/data/
+**/import/
+**/logs/
+**/metrics/
+**/run/
+**/conf/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Otros
+*.log
+*.pid
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# typescript
+**/*.tsbuildinfo
+**/next-env.d.ts
